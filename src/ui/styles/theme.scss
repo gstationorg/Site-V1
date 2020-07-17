@@ -1,12 +1,19 @@
-$primary-color: #1B242F;
+$primary-color: #000;
 $light-color: #FEFEFE;
 
 @mixin button {
     display: inline-block;
 }
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -moz-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
 
 body {
     margin: 0;
+    overflow-x: hidden;
     font-family: "Montserrat", "sans-serif"
 }
 .button {

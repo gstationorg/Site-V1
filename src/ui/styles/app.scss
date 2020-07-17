@@ -14,14 +14,28 @@
 
 }
 
+h1.hero__title {
+
+}
+
+h3.city-header {
+    font-size: 1rem;
+}
+
 header.site-header {
+    position: relative;
+    z-index: 999;
     height: 60px;
-    background-color: $primary-color;
     color: #fff;
+    background-color: $primary-color;
     div.site-header__inner {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+
+        div.site-header__section {
+
+        }
     }
 }
 nav.site-menu {        
@@ -44,12 +58,45 @@ nav.site-menu {
 
         li.site-menu__item:hover {
             cursor: pointer;
+            a.site-menu__link {
+                color: gold;
+                transition: 0.4s ease-in-out;
+            }
         }
     }
 }
 
 
 section.hero {
-    height: 100vh;
-    text-align: center;
+
+    div.hero__background {
+        // position: absolute;
+        // top: 0;
+        height: 100vh;
+
+        img.hero__image {
+            width: 100vw;
+        }
+    }
+
+    div.hero__overlay {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 999;
+        text-align: center;
+        color: #fff;
+        margin: auto;
+
+        @include transform(translate(0, 15%));
+
+        h1.hero__title {
+            font-size: 3.4rem;
+            letter-spacing: 5px;
+        }
+        p.hero__subtitle {
+            
+        }
+    }
 }
