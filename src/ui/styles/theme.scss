@@ -7,6 +7,7 @@ $light-color: #FEFEFE;
 
 body {
     margin: 0;
+    font-family: "Montserrat", "sans-serif"
 }
 .button {
     @include button;
