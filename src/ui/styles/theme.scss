@@ -1,0 +1,19 @@
+$primary-color: #1B242F;
+$light-color: #FEFEFE;
+
+@mixin button {
+    display: inline-block;
+}
+
+body {
+    margin: 0;
+}
+.button {
+    @include button;
+}
+
+/* 
+
+Blue - Perserverance, Vigilance, and Justice
+
+*/

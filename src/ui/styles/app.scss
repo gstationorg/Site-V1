@@ -1,0 +1,55 @@
+@import "./theme.scss";
+
+/* Desktop Screens */
+@media screen and (max-width: 1920px) and (min-width: 901px) {
+
+}
+/* Tablets */
+@media screen and (max-width: 900px) and (min-width: 671px) {
+
+}
+
+/* Phones */
+@media screen and (max-width: 670px) {
+
+}
+
+header.site-header {
+    height: 60px;
+    background-color: $primary-color;
+    color: #fff;
+    div.site-header__inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+nav.site-menu {        
+    ul.site-menu__inner {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li.site-menu__item {
+            display: inline-block;
+
+            a.site-menu__link {
+                text-decoration: none;
+            }
+            a.site-menu__link:visited {
+                color: #fff;
+            }
+        }
+
+        li.site-menu__item:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+
+section.hero {
+    display: none;
+    height: 100vh;
+}
